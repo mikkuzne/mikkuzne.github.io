@@ -33,7 +33,7 @@ PhD from MIPT in Computer Science (2016); earlier work at Yahoo! Research on ext
 
 ---
 
-## Open-source projects
+## Built with Claude
 
 - **[ClawGuard](/projects/clawguard/)**  ·  [github.com/mikkuzne/clawguard](https://github.com/mikkuzne/clawguard) — AI workload observer. Watches what local agents are doing on your machine (processes, network, parent chains) and never blocks or modifies anything itself. A small LLM loop maintains a live world model in place of hand-written rules.
 - **[apparty](/projects/apparty/)**  ·  [github.com/mikkuzne/apparty](https://github.com/mikkuzne/apparty) — Telegram bot that builds sandboxed web apps on demand. An Anthropic tool-use agent writes the code; `bwrap` isolates it; `/why <id>` has a second model narrate what the agent did, in plain English.
