@@ -1,0 +1,10 @@
+# Social media links and usernames.
+# Displayed in the order defined here.
+# See https://github.com/george-gca/jekyll-socials for the full key list.
+
+cv_pdf: /assets/pdf/cv.pdf
+email: mikkuzne@gmail.com
+scholar_userid: fsrkabwAAAAJ
+github_username: mikkuzne
+linkedin_username: mikhail-kuznetsov-887568104
+rss_icon: true
