@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://mikkuzne.github.io/sitemap.xml
