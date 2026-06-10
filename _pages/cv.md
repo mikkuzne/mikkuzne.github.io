@@ -17,7 +17,7 @@ The PDF is the source of truth — it's regenerated from [LaTeX](https://github.
 
 **Senior Applied Scientist, Amazon AWS — AI Security and Observability.** *(2022 – present.)*
 
-- Leading **agentic AI security** — detection models on agent runtime traces (Amazon Bedrock AgentCore), focused on prompt-injection signals from unusual patterns of tool use given historical and contextual signals.
+- Leading **agentic AI security** — detection models on agent runtime traces (Amazon Bedrock AgentCore) that surface intent deviation and policy violations, extended with OS-level signals (eBPF, system logs) and auto-detection of agentic workloads in dynamic environments.
 - Previously **tech lead of the audit-log foundation model** — shipped to production Sep 2025, cutting customer-facing false positives by **20–30%**. Designed the 10B → 10M diversity-preserving sampling, contrastive fine-tuning for tenant-specific entities (asnOrg, api), multi-signal evaluation, and interpretability tooling.
 - Co-designed a memory-efficient hierarchical-log architecture for long-context, high-throughput security workloads.
 
