@@ -32,15 +32,30 @@
 
 % ========== AI Security & Observability ==========
 
-@inproceedings{evaudit2026,
-  abbr        = {Preprint},
+@inproceedings{purpleaudit2026,
+  abbr        = {NeurIPS},
   bibtex_show = {true},
   selected    = {true},
-  title       = {{EV-AUDIT}: A Co-Evolutionary Auditing Framework for Task Hijacking in Multi-Agent Systems},
+  title       = {{PurpleAudit}: A Co-Evolutionary Auditing Framework for Task Hijacking in Multi-Agent Systems},
   author      = {Bilot, T. and Zhang, Z. and Liu, K. and Kuznetsov, M. and Ding, W.},
+  booktitle   = neurips,
+  year        = {2026},
+  note        = {Evaluations and Datasets Track},
+  pdf         = {https://tristanbilot.github.io/public_content/paper_purpleaudit.pdf},
+  abstract    = {Multi-agent systems (MASs) are increasingly deployed for complex tasks, yet their security against indirect prompt injection remains poorly understood. As frontier LLMs become more robust to injections with overtly malicious semantics, such as credential exfiltration, unauthorized transactions, or policy bypass, the residual attack surface shifts to task hijacking: an injection that silently redirects an MAS toward an attacker-chosen alternative task plausibly within the agent's domain, such as the wrong patient's record, a competitor's product, or a different CVE. There is no malicious verb to refuse, and existing benchmarks, designed around overtly malicious goals in single-agent settings, do not characterize this surface. We introduce PurpleAudit, an auditing framework that lets a practitioner stress-test their own MAS against task hijacking and derive a tailored system-prompt defense. The framework couples 22 baseline attacks and four prompt/tool-level defense baselines from the literature with a co-evolutionary purple-team procedure, in which red- and blue-team agents evolve stronger attacks and adaptive defenses by reasoning over each other's execution traces. Applied across frontier backends on ten MASs and a real-world MAS with live web access, PurpleAudit surfaces an MAS-specific attack pattern that frames the injection as a prerequisite for completing the user's task, reaching 31.26\% ASR on Claude Opus 4.5 under the framework's auditing protocol, where 22 baseline attacks fail entirely. The co-evolved defense suppresses both baseline and evolved attacks at negligible utility cost, transfers across reasoning-capable backends, and operates at the prompt level with low deployment overhead.}
+}
+
+@article{kernelevidence2026,
+  abbr        = {arXiv},
+  bibtex_show = {true},
+  selected    = {true},
+  title       = {On the Effectiveness of Kernel-Level Evidence for Agent Security},
+  author      = {King, S. and Zhang, Z. and Kuznetsov, M. and Liu, K. and Coskun, B. and Ding, W.},
+  journal     = {arXiv preprint arXiv:2609.28915},
+  arxiv       = {2609.28915},
   year        = {2026},
   note        = {In submission},
-  abstract    = {Multi-agent systems (MASs) are increasingly deployed for complex tasks, yet their security against indirect prompt injection remains poorly understood. As frontier LLMs become more robust to injections with overtly malicious semantics, such as credential exfiltration, unauthorized transactions, or policy bypass, the residual attack surface shifts to task hijacking: an injection that silently redirects an MAS toward an attacker-chosen alternative task plausibly within the agent's domain, such as the wrong patient's record, a competitor's product, or a different CVE. There is no malicious verb to refuse, and existing benchmarks, designed around overtly malicious goals in single-agent settings, do not characterize this surface. We introduce EV-AUDIT, an auditing framework that lets a practitioner stress-test their own MAS against task hijacking and derive a tailored system-prompt defense. The framework couples 22 baseline attacks and four prompt/tool-level defense baselines from the literature with a co-evolutionary red/blue-team procedure that evolves stronger attacks and adaptive defenses by reasoning over execution traces. Applied across frontier backends on ten MASs and a real-world MAS with live web access, EV-AUDIT surfaces an MAS-specific attack pattern that frames the injection as a prerequisite for completing the user's task, reaching 31.26\% ASR on Claude Opus 4.5 under the framework's auditing protocol, where 22 baseline attacks fail entirely. The co-evolved defense suppresses both baseline and evolved attacks at negligible utility cost, transfers across reasoning-capable backends, and operates at the prompt level with low deployment overhead.}
+  abstract    = {LLM agents are deployed into infrastructure that grants them broad host authority, yet existing agent-security benchmarks and defenses operate almost exclusively at the application telemetry layer: the served tool manifest, the user prompt, and the model's messages. Some threats, however, smuggle malicious instructions and actions past the application boundary, leaving them invisible to that layer. In this work, we bridge that gap by pairing application-level agent telemetry with kernel-level syscall traces to present the first paired-evidence characterization of kernel-level versus application-layer signal for agent security. To quantify the value of the enhanced telemetry, we introduce Agent Cross-Layer Evidence (ACE), a paired-session corpus of 4,047 sessions and 17 threat models spanning six delivery-vector families and 14 of the 25 OWASP LLM and agentic threat categories, organized into 12 attack mechanics with per-mechanic characterization of where the most discriminative evidence lies. Across four distinct detector families, we find that kernel evidence is discriminative on its own and that composing it with application-layer evidence generally outperforms either single-layer view, revealing complementary signals that single-layer analyses can miss. We further demonstrate generalization to unseen attack families and transfer to an alternate agent runtime. Together, these findings establish the value of cross-layer evidence for agent security.}
 }
 
 @article{hlogformer2024,
