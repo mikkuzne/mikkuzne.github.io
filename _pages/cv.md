@@ -21,7 +21,7 @@ The PDF is the source of truth; it's regenerated from [LaTeX](https://github.com
 - Co-authored the first **paired-evidence study of kernel-level vs. application-layer signal** for agent security ([arXiv:2609.28915](https://arxiv.org/abs/2609.28915)): the **ACE** corpus of 4,047 agent sessions pairing syscall traces with tool manifests and transcripts across 17 threat models. Kernel evidence is discriminative on its own, and cross-layer composition generally beats either single layer.
 - Co-developed **PurpleAudit** (**NeurIPS 2026**, Evaluations & Datasets), a **co-evolutionary red/blue-team** auditing framework for multi-agent systems, in which attacks and defenses evolve against each other over execution traces. Targets *task hijacking*, the case with no malicious verb to refuse: **31.26% attack success** on a frontier backend where all 22 baseline attacks fail, and a prompt-level defense that holds at negligible utility cost.
 - Previously **tech lead of the audit-log foundation model**, shipped to production Sep 2025, cutting customer-facing false positives by **20–30%**. Designed the 10B → 10M diversity-preserving sampling, contrastive fine-tuning for tenant-specific entities (asnOrg, api), multi-signal evaluation, and interpretability tooling.
-- Co-designed a memory-efficient hierarchical-log architecture for long-context, high-throughput security workloads.
+- Co-designed a memory-efficient hierarchical-log architecture for long-context, high-throughput security workloads (**NeurIPS 2026** Workshop on Long-Context Foundation Models).
 
 ## Earlier
 
