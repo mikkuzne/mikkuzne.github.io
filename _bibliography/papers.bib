@@ -72,6 +72,18 @@
   abstract    = {Web agents complete user requests by reading and acting on pages that third parties write, so an instruction planted on a page can redirect the agent away from the user's goal. The agent cannot simply ignore the page, because the page also holds the values and controls the task requires. Current defenses fine-tune the agent on injections fixed before training, and attackers that adapt to the trained model bypass them. Adversarial training lets the attacker adapt but keeps the tasks fixed, so a task stops teaching once the agent solves it. We introduce AdvSim2Real, which co-evolves a task curriculum, an injection adversary, and the agent inside a frozen web world model. The curriculum is rewarded for tasks the agent solves about half of the time, and the adversary only for a success flip, an injection that turns a judged success into a failure. Training in the simulator makes a 4B agent both more capable and more robust: its completion rises with and without attacks, holds against a frontier-model adversary it never trained against, and its capability gain carries over to a real browser. On 150 web tasks, AdvSim2Real raises completion under this unseen adversary by 33.6\% relative to the base agent.}
 }
 
+@article{refusalsbend2026,
+  abbr        = {arXiv},
+  bibtex_show = {true},
+  title       = {Refusals That Bend: Measuring and Predicting Task Malleability in Embodied {VLM} Planners},
+  author      = {Lin, L. Y. and Kuznetsov, M. and Ozmen, M. O. and Celik, Z. B.},
+  journal     = {arXiv preprint arXiv:2609.38971},
+  arxiv       = {2609.38971},
+  year        = {2026},
+  note        = {In submission},
+  abstract    = {Embodied vision-language models (VLMs) are increasingly deployed as high-level planners for robots because they generalize across diverse environments. However, this requires their safety alignment to also hold in unseen environments. Existing red-teaming assumes an adversary who optimizes the prompt, the pixels, or text in the environment, and existing benchmarks ask whether a planner recognizes or mitigates a hazard in a fixed scene. Neither asks whether a refusal the planner has already given survives an ordinary change to the environment. We ask that question by placing a single everyday object into the environment, with no pixel, gradient, or prompt under adversarial control. On 846 tasks that a constitution-guarded planner initially refuses, we find 20.2\% of tasks can be flipped to compliance by one or more objects, and the number of objects differs from one task to another. In addition, the object need not be chosen for the task, i.e., items drawn from a fixed list, with no knowledge of the environment or the instruction, bypass safety about as often as items proposed for the specific task. We qualitatively contrast the tasks bypassed most and least often and find that the distinction lies in how conspicuous the hazard is in the instruction and environment. Susceptibility to safety bypass is therefore a property of the task, which we call its malleability, and we show that it can be predicted before the target is ever queried. A composite of signals read from a small open-source VLM identifies malleable tasks 2.4x as often as picking at random. Everyday objects, whether placed by an adversary or introduced by ordinary rearrangement of the environment, are thus sufficient to overturn a refusal. Because susceptibility is determined by how a task is specified, we recommend assessing malleability per task prior to deployment.}
+}
+
 @inproceedings{hlogformer2026,
   abbr        = {NeurIPS-W},
   bibtex_show = {true},
